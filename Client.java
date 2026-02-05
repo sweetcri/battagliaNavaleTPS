@@ -98,24 +98,5 @@ public class Client {
         out.println("ATTACK:" + x + "," + y);
     }
 
-    private static void printBoards() {
-        // pulisce lo schermo
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
-        
-        System.out.println("==============================================");
-        System.out.println(" STATO: " + statusMessage);
-        System.out.println("==============================================");
-        System.out.println("   TUO CAMPO                CAMPO NEMICO");
-        System.out.println("   0 1 2 3 4 5 6 7 8 9      0 1 2 3 4 5 6 7 8 9");
-        
-        for (int i = 0; i < 10; i++) {
-            System.out.print(i + " ");
-            for (char c : myBoard[i]) System.out.print(c + " ");
-            System.out.print("   " + i + " ");
-            for (char c : enemyBoard[i]) System.out.print(c + " ");
-            System.out.println();
-        }
-        System.out.println("==============================================");
-    }
+    
 }
